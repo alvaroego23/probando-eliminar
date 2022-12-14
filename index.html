@@ -10,8 +10,8 @@
     
     <div id="app">
         <!--Insertar_Tarea-->
-        <input type="text" name="agregarTarea" id="Input-tarea" v-model="nueva_Tarea">
-        <button @click="agregarTarea">Agregar_Tarea</button>
+        <input type="text" v-model="nueva_Tarea">
+        <button v-on:click="agregarTarea">Agregar</button>
         <!--Visualizar_Tarea-->
         <ul>
             <li v-for="tarea of Tareas">

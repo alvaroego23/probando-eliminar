@@ -2,7 +2,8 @@ const app = new Vue({
   el:'#app',
   data:{
     Tareas:[
-      {nombre:''}
+      {nombre:'hola'},
+      {nombre:'hello'}
     ],
     nueva_Tarea:''
 
