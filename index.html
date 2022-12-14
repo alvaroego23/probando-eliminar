@@ -9,8 +9,15 @@
 <body>
     
     <div id="app">
-        <input type="text" name="agregarTarea" id="Input-tarea" v-model="nueva_Tarea" >
-        <button @click="agregarTarea"></button>
+        <!--Insertar_Tarea-->
+        <input type="text" name="agregarTarea" id="Input-tarea" v-model="nueva_Tarea">
+        <button @click="agregarTarea">Agregar_Tarea</button>
+        <!--Visualizar_Tarea-->
+        <ul>
+            <li v-for="tarea of Tareas">
+                {{tarea.nombre}}
+            </li>
+        </ul>
 
     </div>
     

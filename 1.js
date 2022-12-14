@@ -1,14 +1,16 @@
 const app = new Vue({
   el:'#app',
   data:{
-    Tareas:[],
+    Tareas:[
+      {nombre:''}
+    ],
     nueva_Tarea:''
 
   },
   methods:{
     agregarTarea(){
       this.Tareas.push({
-        Tarea: this.nueva_Tarea
+        nombre: this.nueva_Tarea
       })
         
 
