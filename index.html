@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue.js</title>
+    <title>Optimización Tareas</title>
 </head>
 <body>
-    <h1>Alvaro x Daymara</h1>
-    <h2>te amooooo muchoteeeee</h2>
-    <h6>por siempre juntos</h6>
-    <div id="app">{{ message }}</div>
+    
+    <div id="app">
+        <input type="text" name="agregarTarea" id="Input-tarea" v-model="nueva_Tarea" >
+        <button @click="agregarTarea"></button>
+
+    </div>
     
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="1.js"></script>

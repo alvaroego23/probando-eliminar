@@ -1,10 +1,18 @@
-  const { createApp } = Vue
+const app = new Vue({
+  el:'#app',
+  data:{
+    Tareas:[],
+    nueva_Tarea:''
 
-  createApp({
-    data() {
-      return {
-        message: 'TE AMOOOOOOOOOOOOOOOO'
-      }
+  },
+  methods:{
+    agregarTarea(){
+      this.Tareas.push({
+        Tarea: this.nueva_Tarea
+      })
+        
+
     }
-  }).mount('#app')
 
+  }
+})  
