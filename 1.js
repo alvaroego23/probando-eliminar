@@ -3,7 +3,7 @@
   createApp({
     data() {
       return {
-        message: 'Hello Vue!'
+        message: 'TE AMOOOOOOOOOOOOOOOO'
       }
     }
   }).mount('#app')
